@@ -188,6 +188,8 @@ public class MainActivity extends AppCompatActivity {
         webView.clearCache(true);
         webView.clearHistory();
         webView.setWebViewClient(new WebViewClient());
+        webView.setWebChromeClient(new WebChromeClient());
+
     }
 
     private void openBrowserWithURL(String url) {
